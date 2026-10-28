@@ -1,0 +1,468 @@
+body{
+  background-color:ghostwhite
+}
+.box{
+  display:flex;
+  gap:250px;
+  padding:20px;
+  border:1px solid rgba(15, 167, 173, 0.882);
+  margin-top:-15px;
+  margin-left:-10px;
+  margin-right:10px;
+  position:fixed;
+}
+.box a{
+  text-decoration: none;
+  position:static;
+}
+.multi {
+  color:darkgreen;
+  font-weight:bold;
+  font-size:20px;
+  margin-top:17px;
+}
+.box1 a{
+  list-style:none;
+}
+.box1{
+  display:flex;
+  gap:15px;
+  position:sticky;
+}
+.hs{
+  margin-left:15px;
+}
+.ss{
+  margin-left:15px;
+}
+.button{
+  border:2px solid green;
+  padding:10px;
+  border-radius:7px;
+  background-color:rgba(46, 116, 139, 0.966);
+  color:white;
+  font-weight:bold;
+  margin-right:10px;
+  position:sticky;
+  max-width:50%;
+}
+.clinician{
+  font-size:50px;
+  padding-top:75px;
+  margin-left:10px;
+  color:rgb(255, 98, 0);
+  font-weight:bold;
+  
+}
+.Box{
+  border:1px solid white;
+  display:flex;
+  flex-direction:column;
+}
+.box-container {
+  border: 1px solid #ccc;
+  border-top: 5px solid orange;
+  border-radius: 8px;
+  padding: 20px;
+  width: 450px;           /* Fixed width istamochina size ki limit avtundi */
+  max-width: 100%;        /* Screen daati bayatiki pokunda untundi */
+  box-sizing: border-box; /* Padding & border width lo include avtayi */
+  background-color: white;
+  margin-top:-450px;
+  margin-left:445px      /* Center cheyadaniki, negative margins avoid cheyandi */
+}
+
+#problem {
+  width: 100%;            /* 👈 Box width lo 100% fit avtundi */
+  height: 65px;
+  box-sizing: border-box;
+  resize: vertical;       /* User resize chesukovadaniki */
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column; /* 👈 Checkboxes okati kinda okati ravataniki */
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.b {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: rgba(46, 116, 139, 0.966);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* .box-container{
+  border:2px;
+  border-top:5px solid orange;
+  border-radius:8px;
+  padding:10px;
+  margin-top:-450px;
+  margin-left:410px;
+  background-color:white;
+  position:static;
+  max-width:100%;
+  
+}
+#problem{
+  width:400px;
+  height:65px;
+  display:flex;
+  position:relative;
+  overflow:auto;
+  max-width:100%;
+  box-sizing:border-box;
+}
+.btn{
+  display:flex;
+  flex-direction:column;
+}
+.b{
+display:flex;
+margin-top:10px;
+border:2px solid green;
+  padding:10px;
+  border-radius:7px;
+  background-color:rgba(46, 116, 139, 0.966);
+  color:white;
+  font-weight:bold;
+} */
+.btns{
+  display:flex;
+  gap:20px;
+  width:250px;
+}
+.visit{
+  border:2px solid green;
+  padding:10px;
+  border-radius:7px;
+  background-color:rgba(46, 116, 139, 0.966);
+  color:white;
+  font-weight:bold;
+  margin-left:10px
+}
+.service{
+   border:2px solid green;
+  padding:10px;
+  border-radius:7px;
+  background-color:rgba(46, 116, 139, 0.966);
+  color:white;
+  font-weight:bold;
+  width:100px;
+}
+/* .slots{
+  display:flex;
+  .slots:li >child(odd){
+    display:block;
+  }
+} */
+.slots{
+  display:flex;
+  gap:10px;
+  margin-left:5px;  
+}
+.s1{
+  display:flex;
+  flex-direction:column;
+  margin-left:10px;
+}
+.s2{
+  display:flex;
+  flex-direction:column;
+}
+.s3{
+  display:flex;
+  flex-direction:column;
+}
+.treat{
+  padding:130px;
+  padding-left:30px;
+  font-weight:bold;
+  margin-top:-50px;
+}
+.para{
+  margin-left:25px;
+  padding-top:8px;
+  margin-top:-150px;
+
+}
+.total ul{
+  list-style:none;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:20px;
+  padding:px;
+  
+}
+.total li{
+  display:flex;;
+  flex-direction:column;
+  gap:4px;
+  border-bottom:2px solid rgba(0, 128, 0, 0.153);
+}
+.Iam{
+  border-bottom:2px solid rgba(0, 128, 0, 0.334);
+  padding:20px;
+  margin-right:-50px;
+}
+.book{
+  padding-top:15px;
+  margin-left:15px;
+}
+.short{
+  margin-left:15px;
+}
+.list{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style:none;
+  gap:20px;
+}
+.list li{
+  border-left:4px solid green;
+  height:125px;
+  padding-left:15px;
+}
+.text-block{
+  display:block;
+  color:rgb(0, 113, 128);
+  font-weight:bold;
+}
+.block{
+  display:flex;
+  color:black;
+  margin-top:-20px;
+  padding:5px;
+  margin-right:5px;
+}
+#p1, #p2, #p3{
+  margin-top:15px;
+  color:orange;
+  font-weight:bold;
+  font-size:20px;
+  margin-left:15px;
+}
+.Box1{
+margin-left:15px
+}
+#doc1{
+  border:2px solid rgba(46, 116, 139, 0.966);
+  border-radius:50%;
+  width:100%;
+  max-width:50px;
+  height:50px;
+  background-color:rgba(46, 116, 139, 0.966);
+  color:white;
+  padding:10px;
+  font-weight:bold;
+  margin-top:-7px;
+}
+#doc2{
+  border:2px solid rgba(46, 116, 139, 0.966);
+  border-radius:50%;
+  width:50px;
+  max-width:100%;
+  height:50px;
+  background-color:rgba(46, 116, 139, 0.966);
+  color:white;
+  padding:10px;
+  font-weight:bold;
+   margin-top:-7px;
+}
+#doc3{
+  border:2px solid rgba(46, 116, 139, 0.966);
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  max-width:100%;
+  background-color:rgba(46, 116, 139, 0.966);
+  color:white;
+  padding:10px;
+  font-weight:bold;
+   margin-top:-7px;
+}
+#doc4, #doc5, #doc6{
+   border:2px solid rgba(46, 116, 139, 0.966);
+  border-radius:50%;
+  width:50px;
+  max-width:50px;
+  height:50px;
+  background-color:rgba(46, 116, 139, 0.966);
+  color:white;
+  padding:10px;
+  font-weight:bold;
+   margin-top:-7px;
+}
+.doc{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap:10px;
+  margin-top:10px;
+  padding-top:10px;
+  font-size:30px;
+  align-items: center;
+}
+#c1 img, #c3 img{
+  width:40vh;
+  height:50vh;
+  border-radius:50%;
+}
+#c2 img{
+  width:40vh;
+  height:50vh;
+  border-radius:50%;
+}
+#c1,#c2,#c3,#c4,#c5,#c6{
+  color:darkmagenta;
+  font-weight:bold;
+}
+#c4 img, #c5 img, #c6 img{
+  width:40vh;
+  height:50vh;
+  border-radius:50%;
+}
+.open {
+  border: 2px solid black;
+  background-color: #0D221B;
+  color: white;
+  display: flex;          /* Opening hours & Find us ni pakka pakkanu techukodaniki */
+  gap: 70px;
+  padding: 30px;
+  width:1200px;
+  margin-top:10px;
+}
+
+.hrs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;              /* Rows madhya chinna gap */
+}
+
+/* Day and timing okate line lo ravadaniki */
+.time-row {
+  display: flex;
+  gap: 20px;              /* Day ki, timing ki madhya gap */
+  justify-content: space-between;
+}
+
+.hrs h2, .close h2 {
+  margin-top: 0;
+}
+
+.close {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+}
+
+.question-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.question-btn img {
+  width: 20px; /* Image size adjust chesukunanduku */
+  height: 20px;
+  transform:rotate(270deg);
+}
+
+/* Modata answers anni hide ayi untayi */
+.answer {
+  display: none;
+  padding-left: 30px;
+  color:purple;
+  font-weight:bold;
+  margin-bottom: 15px;
+}
+
+/* JavaScript dwara 'active' class add ayinappudu answer display avtundi */
+.faq-item.active .answer {
+  display: block;
+}
+.l1{
+  border:2px solid #0D221B;
+  margin-left:10px;
+  color:rgb(0, 102, 255);
+  padding:10px;
+  font-weight:bold;
+  font-size:17px;
+  background-color:whitesmoke;
+}
+.booking{
+  margin-left:15px;
+  color:#0D221B;
+}
+.req{
+  margin-left:15px;
+  color:#0D221B;
+}
+  .form-group {
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ max-width: 400px;
+ gap: 8px; 
+ margin-bottom: 16px;
+ } 
+
+ .form-group label {
+ font-weight: 600;
+ display:flex;
+ flex-direction: column;
+ gap:20px;
+ font-size: 14px;
+ color: #333;
+ margin-left:15px;
+ }
+
+ .form-group input {
+ padding: 10px;
+ font-size: 16px;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ outline: none;
+ margin-left:15px;
+ } 
+.form-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+  }
+.send{
+  background-color:rgba(46, 116, 139, 0.966);
+  color:white;
+  font-weight:bold;
+  padding:10px;
+  border-radius:10px;
+  width:405px;
+  margin-top:5px;
+  margin-left:12px;
+}
+.clinic{
+  border-top:2px solid rgba(0, 128, 0, 0.251);
+  margin-left:-10px;
+  padding-top:10px;
+  padding-left:20px;
+  color:forestgreen;
+}
+ #result-box {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 6px;
+      display: none;
+    }
+
+    .emergency { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+    .sameday { background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+    .hours48 { background-color: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+    .routine { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
