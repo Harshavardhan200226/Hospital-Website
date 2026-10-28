@@ -1,0 +1,13 @@
+I built Visit Planner, a working clinic appointment assistant, and published it as a page you can open from the card above. I haven’t opened or tested it, so try a few sample inputs yourself before you submit.
+
+What it does
+
+A patient describes the reason for their visit, with age group, symptom duration, a 1–10 discomfort slider and emergency red-flag checkboxes.
+It returns an urgency level (Emergency, Same day, Within 48 hours or Routine), a suggested appointment type, and a plain list of why it reached that result.
+It estimates no-show risk from booking lead time, missed visits and first-visit status, and drafts a reminder message that adapts to that risk.
+It carries a clear “not medical advice” notice and uses only fictional data.
+
+Assumptions to be aware of
+
+The triage runs on keyword rules inside the page, not a live AI call. Published pages can’t call the Claude API, and rule-based logic is easier to explain and audit. In your video, say the AI was used to design, write and refine the rules and the app, which is true to how it was made.
+I kept this first build lean. Possible additions are a clinic-staff view, multiple languages, and more rules for specific conditions.
