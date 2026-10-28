@@ -1,0 +1,194 @@
+document.addEventListener('DOMContentLoaded',function(){
+  const links=document.querySelectorAll('.box .box1 a');
+  links.forEach(link =>{
+    link.addEventListener("click",function(e){
+      e.preventDefault();
+      const targetId=this.getAttribute('href');
+      const targetSection=document.querySelector(targetId);
+      if(targetSection){
+        targetSection.scrollIntoView({
+          behavior:'smooth',
+          block:'start'
+
+        });
+      }
+      document.addEventListener('DOMContentLoaded', function() {
+  const links = document.querySelectorAll('a .form-group'); // Selects your button link
+  
+  links.forEach(link => {
+    link.addEventListener("click", function(e) {
+      const targetId = this.getAttribute('href');
+      
+      if (targetId && targetId.startsWith('#')) {
+        const targetSection = document.querySelector(targetId);
+        
+        if (targetSection) {
+          e.preventDefault();
+          targetSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }
+    });
+  });
+ document.addEventListener('DOMContentLoaded', function() {
+        const button = document.querySelector('.send');
+        
+        button.addEventListener("click", function(e) {
+            e.preventDefault();
+            
+            const fullname = document.getElementById('name').value;
+            const number = document.getElementById('number').value;
+            const reason = document.getElementById('value').value;
+            
+            if (!fullname.trim()) {
+                alert('Please enter your full name');
+                return;
+            }
+            
+            // This changes the button text
+            this.textContent = `Thanks ${fullname}, your request is successful. You may consult a doctor.`;
+            
+            this.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+    });
+
+});
+});
+});
+});
+
+// document.addEventListener('DOMContentLoaded',function(){
+//   const button=document.querySelector('.b');
+//   const resultBox=document.getElementById("result-box");
+//   const resultTitle=document.getElementById("result-title");
+//   const resultDesc=document.getElementById("result-desc");
+//   const resultDisclaimer=document.getElementById("result-disclaimer");
+//   button.addEventListener("click",function(e){
+//     e.preventDefault();
+//     const problemText=document.getElementById("problem").value.toLowerCase();
+//     const checkboxes=document.querySelectorAll("urgent-check");
+//     let hasEmergencyChecked=Array.from(checkboxes).some(cb=>cb.checked);
+//     const emergencyKeywords = ['heart attack', 'stroke', 'emergency'];
+//     const sameDayKeywords = ['fever', 'cold', 'head ache', 'headache', 'vomiting'];
+//     const hours48Keywords = ['sore throat', 'flu', 'migraine', 'back pain', 'knee', 'anxiety', 'stress', 'sleep'];
+//     const routineKeywords = ['screening', 'vaccin', 'certificate', 'refill', 'prescription', 'routine', 'annual', 'review', 'diabet', 'blood pressure', 'thyroid', 'cholesterol'];
+//     resultBox.className='';
+//     resultBox.style.display='block';
+//     resultDisclaimer.textContent='Estimate only. A clinician makes the final decision.';
+//     if (hasEmergencyChecked || emergencyKeywords.some(keyword => problemText.includes(keyword))) {
+//             resultBox.classList.add('emergency');
+//             resultTitle.textContent = 'Call emergency services now. Do not wait for an appointment.';
+//             resultDesc.textContent = 'Critical symptoms detected.';
+//         } 
+//         else if (sameDayKeywords.some(keyword => problemText.includes(keyword))) {
+//             resultBox.classList.add('sameday');
+//             resultTitle.textContent = 'Same day appointment';
+//             resultDesc.textContent = 'Ask for a same-day slot today.';
+//         } 
+//         else if (hours48Keywords.some(keyword => problemText.includes(keyword))) {
+//             resultBox.classList.add('hours48');
+//             resultTitle.textContent = 'Within 48 hours appointment';
+//             resultDesc.textContent = 'Book the next available slot in the next two days.';
+//         } 
+//         else if (routineKeywords.some(keyword => problemText.includes(keyword))) {
+//             resultBox.classList.add('routine');
+//             resultTitle.textContent = 'Routine';
+//             resultDesc.textContent = 'A standard appointment in the next one to two weeks is fine.';
+//             resultDisclaimer.textContent = ''; // Routine doesn't need the clinician disclaimer per your spec
+//         } 
+//         else {
+//             resultBox.classList.add('hours48');
+//             resultTitle.textContent = 'General Inquiry';
+//             resultDesc.textContent = 'Please contact reception to schedule an appropriate slot.';
+//         }
+
+//         // Smooth scroll to the result
+//         resultBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+//   })
+// })
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.querySelector('.b');
+    const resultBox = document.getElementById('result-box');
+    const resultTitle = document.getElementById('result-title');
+    const resultDesc = document.getElementById('result-desc');
+    const resultDisclaimer = document.getElementById('result-disclaimer');
+
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const problemText = document.getElementById('problem').value.toLowerCase();
+        const checkboxes = document.querySelectorAll('.urgent-check');
+        
+        // Check if any emergency checkbox is ticked
+        let hasEmergencyChecked = Array.from(checkboxes).some(cb => cb.checked);
+
+        // Define keywords
+        const emergencyKeywords = ['heart attack', 'stroke', 'emergency'];
+        const sameDayKeywords = ['fever', 'cold', 'head ache', 'headache', 'vomiting'];
+        const hours48Keywords = ['sore throat', 'flu', 'migraine', 'back pain', 'knee', 'anxiety', 'stress', 'sleep'];
+        const routineKeywords = ['screening', 'vaccin', 'certificate', 'refill', 'prescription', 'routine', 'annual', 'review', 'diabet', 'blood pressure', 'thyroid', 'cholesterol'];
+
+        // Reset classes
+        resultBox.className = '';
+        resultBox.style.display = 'block';
+        resultDisclaimer.textContent = 'Estimate only. A clinician makes the final decision.';
+
+        // Logic check
+        if (hasEmergencyChecked || emergencyKeywords.some(keyword => problemText.includes(keyword))) {
+            resultBox.classList.add('emergency');
+            resultTitle.textContent = 'Call emergency services now. Do not wait for an appointment.';
+            resultDesc.textContent = 'Critical symptoms detected.';
+        } 
+        else if (sameDayKeywords.some(keyword => problemText.includes(keyword))) {
+            resultBox.classList.add('sameday');
+            resultTitle.textContent = 'Same day appointment';
+            resultDesc.textContent = 'Ask for a same-day slot today.';
+        } 
+        else if (hours48Keywords.some(keyword => problemText.includes(keyword))) {
+            resultBox.classList.add('hours48');
+            resultTitle.textContent = 'Within 48 hours appointment';
+            resultDesc.textContent = 'Book the next available slot in the next two days.';
+        } 
+        else if (routineKeywords.some(keyword => problemText.includes(keyword))) {
+            resultBox.classList.add('routine');
+            resultTitle.textContent = 'Routine';
+            resultDesc.textContent = 'A standard appointment in the next one to two weeks is fine.';
+            resultDisclaimer.textContent = ''; // Routine doesn't need the clinician disclaimer per your spec
+        } 
+        else {
+            resultBox.classList.add('hours48');
+            resultTitle.textContent = 'General Inquiry';
+            resultDesc.textContent = 'Please contact reception to schedule an appropriate slot.';
+        }
+
+        // Smooth scroll to the result
+        resultBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const question = item.querySelector('.question-btn');
+    
+    question.addEventListener('click', () => {
+      // Migathavi close chesi, click chesinadi open avvadaniki
+      faqItems.forEach(otherItem => {
+        if (otherItem !== item) {
+          otherItem.classList.remove('active');
+        }
+      });
+
+      // Toggle active class
+      item.classList.toggle('active');
+    });
+  });
+});
