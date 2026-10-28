@@ -1,0 +1,186 @@
+<!Doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="box">
+    <a class ="multi" href="hos">MultiSpeciality Clinical Hospital</a>
+    <div class="box1">
+    <a class ="special" href="#services" >Services</a>
+    <a class="special1" href="#howitworks">How it works</a>
+    <a class="special2" href="#ourteam">Our team</a>
+    <a class="special3" href="#faq">FAQ</a>
+    <a class="button" href="#visit-group" id="btn">Book a visit</a>
+    </div>
+    </div>
+    <div class="Box">
+    <h1 class="clinician">See the right<div>clinician, at the </div>right time</h1>
+    <p class="hs">MultiSpeciality is a neighbourhood clinic for families. Tell us <div class="ss">what’s going on, and we’ll suggest how soon to be seen and</div>what kind of visit to book.</p>
+    <div class="btns"><button class="visit" >Book a visit</button><button class="service" id="service">See our services</button></div>
+    <div class="slots"><p class="s1"><b>Same day slots</b> for urgent problems</p>
+    <p class=s2><b>Mon to Sat</b>8:00 am to 6:00 pm</p>
+    <p class="s3"><b>Plain-language</b>reminders by text</p></div>
+    </div>
+    <!-- <div class="box-container">
+    <h2>Visit Planner</h2>
+    <p>Describe the reason for your visit. This is a demo and not medical advice.</p>
+    <p>Reason for visit
+      <input type="text" id="problem"></p>
+      <input type="checkbox" id="btn">chest pain
+      <input type="checkbox" id="btn1">severe breathing trouble
+      <input type="checkbox" id="btn2">face drooping
+      <input type="checkbox" id="btn3">heavy bleeding
+      <button class="b" value="check Urgency">Check Urgency</button>
+      </div> -->
+      <!-- <div class="box-container">
+    <h2>Visit Planner</h2>
+    <p>Describe the reason for your visit. This is a demo and not medical advice.</p>
+    
+    <label for="problem">Reason for visit</label>
+    <textarea id="problem" placeholder="Describe your symptoms..."></textarea>
+    
+    <div class="checkbox-group">
+        <label><input type="checkbox" class="urgent-check"> chest pain</label>
+        <label><input type="checkbox" class="urgent-check"> severe breathing trouble</label>
+        <label><input type="checkbox" class="urgent-check"> face drooping</label>
+        <label><input type="checkbox" class="urgent-check"> heavy bleeding</label>
+    </div>
+    
+    <button class="b">Check Urgency</button>
+    <div id="result-box">
+      <h3 id="result-title" style="margin: 0 0 8px 0; font-size: 18px;"></h3>
+        <p id="result-desc" style="margin: 0; font-size: 14px;"></p>
+        <p id="result-disclaimer" style="margin: 8px 0 0 0; font-size: 12px; font-style: italic;"></p>
+    </div>
+</div> -->
+
+<div class="box-container">
+    <h2>Visit Planner</h2>
+    <p>Describe the reason for your visit. This is a demo and not medical advice.</p>
+    
+    <label for="problem">Reason for visit</label>
+    <textarea id="problem" placeholder="Describe your symptoms..."></textarea>
+    
+    <div class="checkbox-group">
+        <label><input type="checkbox" class="urgent-check" value="chest pain"> chest pain</label>
+        <label><input type="checkbox" class="urgent-check" value="severe breathing trouble"> severe breathing trouble</label>
+        <label><input type="checkbox" class="urgent-check" value="face drooping"> face drooping</label>
+        <label><input type="checkbox" class="urgent-check" value="heavy bleeding"> heavy bleeding</label>
+    </div>
+    
+    <button class="b">Check Urgency</button>
+
+    <!-- Dynamic Output Area -->
+    <div id="result-box">
+        <h3 id="result-title" style="margin: 0 0 8px 0; font-size: 18px;"></h3>
+        <p id="result-desc" style="margin: 0; font-size: 14px;"></p>
+        <p id="result-disclaimer" style="margin: 8px 0 0 0; font-size: 12px; font-style: italic;"></p>
+    </div>
+</div>
+      <div class="Iam">
+      <h2 class="treat"id="services" >What we treat</h2>
+      <p class="para">Everyday care for children, adults and seniors, all under one roof.</p>
+      <div class="total">
+      <ul>
+        <li><b>Acute illness</b>Fevers, infections, coughs, stomach bugs and rashes, with same-day slots.</li>
+        <li><b>Chronic care reviews</b>Diabetes, blood pressure, asthma and thyroid checks, plus repeat prescriptions.</li>
+        <li><b>Children’s health</b>Growth checks, vaccinations and school certificates.</li>
+        <li><b>Mental wellbeing</b>Talk through stress, low mood, anxiety or poor sleep with a GP</li>
+        <li><b>Injury and pain</b>Sprains, joint pain and back problems, with referral to physio when needed.</li>
+        <li><b>Preventive checks</b>Annual check-ups, screening and travel health advice.</li>
+      </ul>
+      </div>
+      </div>
+      <h2 class="book" id="howitworks">How booking works</h2>
+      <p class="short">Three short steps, and most people are done in under two minutes.</p>
+      <ol class="list">
+        <div class="text-block"><li><p id="p1">Step 1</p><b class="block">Tell us why</b>Describe your symptoms in your own words. Emergency signs are flagged straight away.</li></div>
+        <div class="text-block"><li><p id="p2">Step 2</p><b class="block">Get matched</b>We suggest a visit type and how soon to be seen, with the reasons shown.</li></div>
+        <div class="text-block"><li><p id="p3">Step 3</p><b class="block">Confirm by text</b>You get a short reminder and can reply to confirm or reschedule.</li></div>
+      </ol>
+      <div class="Box1">
+      <h2 id="ourteam">Meet the team</h2>
+      <p>Fictional sample staff for this demo website.</p>
+      </div>
+      <div class="doc">
+      <p id="doc1">HR</p><b> Dr. Harsha Vardhan </b><div class="c" id="c1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREbXpkkX4f5qtqtdrMD01BnBBiyG1ZuVv2xswsonZ2_w&s=10">Cardiologist</div>
+      <p id="doc2">VK</p><b> Dr. Vikram</b><div class="c" id="c2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJB2ia1X2iliuc9a2TDxS6Mm-ckABICmEO3cWDiGKd_A&s=10">Senior ENT Specialist</div>
+      <p id="doc3">SC</p><b> Dr. Siri</b><div class="c" id="c3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa6938cF39xdKGvCzkhbTRKks-Et-ckmow8A0M1aG2Pw&s=10">Neurologist surgeon</div>
+      <p id="doc4">RM</p><b> Dr. Ram </b><div class="c" id="c4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREbXpkkX4f5qtqtdrMD01BnBBiyG1ZuVv2xswsonZ2_w&s=10">Psychiatrist</div>
+      <p id="doc5">SR</p><b> Dr. Suresh</b><div class="c" id="c5"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJB2ia1X2iliuc9a2TDxS6Mm-ckABICmEO3cWDiGKd_A&s=10">Dermatologist</div>
+      <p id="doc6">BV</p><b> Dr. Bhavana</b><div class="c" id="c6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa6938cF39xdKGvCzkhbTRKks-Et-ckmow8A0M1aG2Pw&s=10">Ophthalmologist</div>
+      </div>
+  
+       <div class="open">
+       <div class="hrs">
+    <h2>Opening hours</h2>
+    <div class="time-row"><p>Monday to Friday</p><p id="i1">8:00 am to 6:00 pm</p></div>
+    <div class="time-row"><p>Saturday</p><p id="i2">9:00 am to 1:00 pm</p></div>
+    <div class="time-row"><p>Sunday</p><p id="i3">closed</p></div>
+  </div>
+
+  <!-- Right Side: Address (Find us) -->
+  <div class="close">
+    <h2>Find us</h2>
+    <p class="par">
+      12 Orchard Lane, Greenfield (sample address)<br>
+      Phone: 0000000000000 (sample)<br>
+      For emergencies, call your local emergency number.
+    </p>
+  </div>
+</div>
+
+
+      <!-- <div class="open">
+      <div class="hrs">
+        <h2>Opening hours</h2>
+      <p>Monday to Friday</p><p id="i1">8:00 am to 6:00 pm</p>
+      <p>Saturday</p><p id="i2">9:00 am to 1:00 pm</p>
+      <p>Sunday</p><p id="i3">closed</p>
+      </div>
+      <div class="close">
+      <h2>Find us</h2>
+      <p class="par">12 Orchard Lane, Greenfield (sample address)<br>
+Phone: 0000000000000 (sample)<br>
+For emergencies, call your local emergency number.</p>
+</div>
+</div> -->
+
+
+<h2 class="Q" id="faq">Common Questions</h2>
+<div class="faq-item">
+  <p class="l question-btn"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEuGcHCxxQVEsjuCzBLDj7NIToXfSGa5ky9PCyw4mtgQ&s=10">Do I need an appointment?</p>
+<p class="answer">Yes, appointments are recommended so we can serve you better.</p>
+<div class="faq-item">
+  <p class="l question-btn"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEuGcHCxxQVEsjuCzBLDj7NIToXfSGa5ky9PCyw4mtgQ&s=10">Is the visit planner a diagnosis?</p>
+<p class="answer">No, the visit planner is only for guidance and not a medical diagnosis.</p>
+<div class="faq-item">
+  <p class="l question-btn"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEuGcHCxxQVEsjuCzBLDj7NIToXfSGa5ky9PCyw4mtgQ&s=10">What should I bring?</p>
+<p class="answer">Please bring a valid ID and any previous medical records.</p>
+<div class="faq-item">
+  <p class="l question-btn"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEuGcHCxxQVEsjuCzBLDj7NIToXfSGa5ky9PCyw4mtgQ&s=10">How do I cancel or change a visit?</p>
+<p class="answer">You can call our support number or use the online portal to change your visit.</p>
+<p class="l1">Reply CHANGE to your reminder text, or call the clinic. Please give at least two hours’ notice.</p>
+<h2 class="booking">Book a visit</h2>
+<p class="req">Send us a request and we’ll reply with a time. This demo form does not send data anywhere.
+</p>
+<div class="form-group" id="visit-group">
+    <label for="name">Full name</label>
+    <input type="text" id="name" placeholder="Enter your full name">
+
+    <label for="number">Mobile Number</label>
+    <input type="tel" id="number" placeholder="Enter your mobile number">
+    
+    <label for="value">What is the visit about?</label>
+    <input type="text" id="value" style="width:380px;height:40px;" placeholder="Enter your problem">
+  </div>
+  
+  <button class="send" id="btn">Send request</button>
+
+<p class="clinic">MultiSpeciality Family Clinic is a fictional demonstration website. Not medical advice. Built with AI assistance for a portfolio.</p>
+
+
+  </body>
+</html>
